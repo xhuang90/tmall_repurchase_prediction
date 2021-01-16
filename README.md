@@ -1,8 +1,10 @@
 [TOC]
 
-
-
 赛题链接：[天猫复购预测之挑战Baseline](https://tianchi.aliyun.com/competition/entrance/231576/introduction)
+
+代码链接：[天池新书代码上线](https://tianchi.aliyun.com/specials/promotion/bookcode?spm=5176.12281978.J_9711814210.13.4bd3d75f9ekMEH)
+
+
 
 # 赛题背景
 
@@ -32,7 +34,8 @@
 |   字段名称   |   描述   |
 | ---- | ---- |
 |   user_id  | 购物者的唯一ID编码 |
-| merchant_id |  商家的唯一ID编码prob给定客户是给定商家的重复购买者的概率，取值在[0, 1] |
+| merchant_id |  商家的唯一ID编码 |
+| prob | 给定客户是给定商家的重复购买者的概率，取值在[0, 1] |
 
 
 
@@ -48,7 +51,7 @@
 |   user_id  | 购物者的唯一ID编码 |
 | item_id |  商品的唯一编码 |
 | cat_id |  商品所属品类的唯一编码 |
-| merchant_id |  商家的唯一ID编码 |
+| merchant_id（seller_id） |  商家的唯一ID编码 |
 | brand_id |  商品品牌的唯一编码 |
 | time_tamp |  购买时间（格式：mmdd） |
 | action_type |  包含{0, 1, 2, 3}，0表示单击，1表示添加到购物车，2表示购买，3表示添加到收藏夹 |
